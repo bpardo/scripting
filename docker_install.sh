@@ -48,4 +48,4 @@ sudo curl -L https://github.com/docker/compose/releases/download/1.17.0/docker-c
 sudo chmod +x /usr/local/bin/docker-compose
 docker-compose --version
 
-echo "*** End of process
+echo "*** End of process"
