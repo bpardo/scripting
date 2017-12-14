@@ -5,6 +5,11 @@
 # V 0.1 - 2017-12-13 Initial version
 # ---
 
+LUID=$(id -u)
+if [ $LUID -eq 0 ]; then
+  error "Error : you must use an user not the root account"
+  exit 1
+fi
 
 if [ -z $1 ]; then
   echo "Error : You must specify an user name on the command line."
